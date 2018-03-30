@@ -20,10 +20,12 @@
         android:text="Digite o valor que você paga por mês. Ex: pago R$ 100,00 por mês de Internet"
         android:textAlignment="center"
         android:id="@+id/descricaoValorId"
-        android:layout_below="@+id/textoDescricaoId"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:textColor="#1d215c"/>
+        android:textColor="#1d215c"
+        android:layout_above="@+id/editTextValorId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -32,13 +34,14 @@
         android:ems="10"
         android:background="@android:color/white"
         android:id="@+id/editTextValorId"
-        android:layout_marginTop="21dp"
         android:paddingBottom="10dp"
-        android:layout_below="@+id/descricaoValorId"
-        android:layout_centerHorizontal="true"
-        android:elevation="5dp"/>
-
-
+        android:elevation="5dp"
+        android:layout_above="@+id/textoNumeroDiasId"
+        android:layout_alignLeft="@+id/editTextDiasId"
+        android:layout_alignStart="@+id/editTextDiasId"
+        android:layout_marginBottom="35dp"
+        android:textColor="@android:color/black"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,25 +50,27 @@
         android:text="Digite o número de dias que você utilizou o serviço no mês"
         android:textAlignment="center"
         android:id="@+id/textoNumeroDiasId"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/editTextValorId"
+        android:textColor="#1d215c"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/editTextDiasId"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#1d215c"/>
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:ems="10"
         android:id="@+id/editTextDiasId"
         android:background="@android:color/white"
-        android:layout_marginTop="23dp"
         android:paddingBottom="10dp"
-        android:layout_below="@+id/textoNumeroDiasId"
-        android:layout_alignLeft="@+id/editTextValorId"
-        android:layout_alignStart="@+id/editTextValorId"
-        android:elevation="5dp"/>
+        android:elevation="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:maxLength="2"/>
+
+
 
     <Button
         android:layout_width="match_parent"
@@ -73,10 +78,22 @@
         android:text="Calcular"
         android:background="@drawable/botao_customizado"
         android:id="@+id/buttonCalcular"
+        android:layout_marginTop="54dp"
+        android:textColor="#FFFFFF"
         android:layout_below="@+id/editTextDiasId"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:textColor="#FFFFFF" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center"
+        android:id="@+id/textoResultadoId"
+        android:textColor="#1d215c"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/buttonCalcular"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
