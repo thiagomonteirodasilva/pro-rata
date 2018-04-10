@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProRata</string>
+    <string name="texto_popup">Pró-rata é o valor proporcional cobrado por dias usados de um determinado serviço. Ex: suponhamos que você contratou um serviço de telefonia no dia 5 e a fatura fecha no dia 15. Isso significa que foram usados somente 11 dias. Portanto, é calculado o valor fixo de seu produto / 30 * 11. O resultado é o valor a ser pago referente a esse período de uso.</string>
 </resources>

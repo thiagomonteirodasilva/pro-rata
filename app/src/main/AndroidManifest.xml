@@ -15,11 +15,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activity.MainActivity"
             android:parentActivityName=".activity.InicialActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.InicialActivity"/>
+        </activity>
+
+        <activity android:name=".activity.PopSignificado"
+            android:parentActivityName=".activity.InicialActivity"
+            android:theme="@style/AppTheme.CustomTheme">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity.InicialActivity"/>
         </activity>
     </application>
 

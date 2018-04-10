@@ -36,5 +36,16 @@ public class InicialActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //onclick para abrir pop-up significado pro-rata
+        textoSignificado = (TextView) findViewById(R.id.textoSignificadoId);
+
+        textoSignificado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InicialActivity.this, PopSignificado.class);
+                startActivity(intent);
+            }
+        });
     }
 }
